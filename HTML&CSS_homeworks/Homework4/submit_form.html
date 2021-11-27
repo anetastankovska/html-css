@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit form</title>
+    <style>
+        legend {
+            font-weight: bold;
+        }
+        .main {
+            font-family: Arial, Helvetica, sans-serif;
+            box-shadow: 5px 5px 5px 1px gray;
+        }
+        form>fieldset {
+            box-shadow: 3px 3px 3px 1px gray;
+        }     
+    </style>
+</head>
+
+<body>
+    <fieldset class = main style="background-image: url('Images/background_image.jpg'); background-size: cover;">
+        
+        <h1>Dado Tea Lunch Special</h1>
+        <p>Monday through Friday, 11 am - 3pm</p>
+        <p>&#36 9.95 <small>(plus tax)</small></p>
+        <p><i>Includes sandwich, snack and drink</i></p>
+    
+    <form action="" method="GET">
+        <fieldset>
+            <legend>Other information</legend>
+            <label for="firstname">First name: </label>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <br/>
+            <br/>
+            <input type="radio" name="place" id="here" value="here">
+            <label for="here">Here</label>
+            <br/>
+            <input type="radio" name="place" id="togo" value="togo">
+            <label for="togo">To go</label>
+        </fieldset>
+    </form>
+    <br/>
+    <form action="" method="GET">
+        <fieldset>
+            <legend>Sandwich</legend>
+            <p>Monday</p>
+            <input type="radio" name="sandwich" id="tomato_mozzarella"  value="tomato_mozzarella">
+            <label for="tomato_mozzarella">Tomato Mozzarella</label>
+            <br/>
+            <input type="radio" name="sandwich" id="chicken_salad"  value="chicken_salad">
+            <label for="chicken_salad">Chicken Salad</label>
+            
+            <p>Tuesday</p>
+            <input type="radio" name="sandwich" id="greek_salad_wrap"  value="greek_salad_wrap">
+            <label for="greek_salad_wrap">Greek Salad Wrap</label>
+            <br/>
+            <input type="radio" name="sandwich" id="toto_wrap"  value="toto_wrap">
+            <label for="toto_wrap">Toto Wrap</label>
+
+            <p>Wednesday</p>
+            <input type="radio" name="sandwich" id="red_pepper_hummus"  value="red_pepper_hummus">
+            <label for="red_pepper_hummus">Red Pepper Hummus</label>
+            <br/>
+            <input type="radio" name="sandwich" id="roasted_turkey"  value="roasted_turkey">
+            <label for="roasted_turkey">Roasted Turkey</label>
+
+            <p>Thursday</p>
+            <input type="radio" name="sandwich" id="carrot_ginger_hummus_wrap"  value="carrot_ginger_hummus_wrap">
+            <label for="carrot_ginger_hummus_wrap">Carrot-ginger Hummus Wrap</label>
+            <br/>
+            <input type="radio" name="sandwich" id="egg_salad"  value="egg_salad">
+            <label for="egg_salad">Egg Salad</label>
+
+            <p>Friday</p>
+            <input type="radio" name="sandwich" id="dado_wrap"  value="dado_wrap">
+            <label for="dado_wrap">Dado Wrap</label>
+            <br/>
+            <input type="radio" name="sandwich" id="tuna_salad"  value="tuna_salad">
+            <label for="tuna_salad">Tuna Salad</label>
+
+            <hr/>
+
+            <input type="checkbox" name="gluten_free" id="gluten_free_bread" value="gluten_free_bread">
+            <label for="gluten_free_bread">Gluten Free Bread <small>(75 &#162 extra)</small></label>
+
+        </fieldset>       
+    </form>
+    <br/>
+    <form action="" method="GET">
+        <fieldset>
+            <legend>Snack</legend>
+            <p>Snacks</p>
+            <input type="radio" name="snack" id="apple"  value="apple">
+            <label for="apple">Apple</label>
+            <br/>
+            <input type="radio" name="snack" id="banana"  value="banana">
+            <label for="banana">Banana</label>
+            <br/>
+            <input type="radio" name="snack" id="potato_chips"  value="potato_chips">
+            <label for="potato_chips">Potato Chips</label>
+        </fieldset>
+    </form>
+    <br/>
+    <form action="" method="GET">
+        <fieldset>
+            <legend>Regular size drink</legend>
+            <label for="">Drinks</label>
+            <select name="drink" id="drink">
+                <option value="" disabled selected hidden>Please select your drink</option>
+                <option value="coffee_or_iced_coffee">Coffee or Iced Coffee</option>
+                <option value="organic_peppermint">Organic Peppermint</option>
+                <option value="green_tea">Hot od Iced Sencha Green Tea</option>
+                <option value="black_tea">Hot or Iced Keemun Black Tea</option>
+                <option value="bubble_tea">Regular-size Bubble Tea<small>(&#36 1.5 extra)</small></option>
+            </select>
+            <hr/>
+            <input type="checkbox" name="drink_size" id="large_drink" value="large_drink">
+            <label for="large_drink">Large Drink <small>(75 &#162 extra)</small></label>
+        </fieldset>
+        <p>* No substitutions</p>
+        <input type="submit" value="Place order">
+    </form>
+    
+    </fieldset>
+</body>
+</html>
