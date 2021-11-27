@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit form</title>
+</head>
+<body>
+    <h2 style="background-color: lightgray;">Testform</h2>  
+    <form action="" method="GET">
+        <fieldset>
+            
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        
+        <br><br>
+    
+        <label for="pass">Password</label>
+        <input type="password" name="password" id="pass" minlength="12"> 
+
+        <br><br>
+
+        <p>Gender</p>
+        <input type="radio" name="gender" id="Male" value="Male>">
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" name="gender" id="Female" value="Female">
+        <label for="rock">Female</label>
+
+
+        <br><br>
+
+        <label for="continent">Please select a continent</label>
+        <select name="continent" id="continent">
+            <option value="" disaled selected hidden>Please select...</option>
+            <option value="europe">Europe</option>
+            <option value="northAmerica">North America</option>
+            <option value="southAmerica">South America</option>
+            <option value="Asia">Asia</option>
+            <option value="Africa">Africa</option>
+            <option value="Australia">Australia</option>
+        </select>
+        <br><br>
+
+        <p>Meals</p>
+
+        <input type="checkbox" name="breakfast" id="breakfast" value="breakfast">
+        <label for="breakfast">breakfast</label>
+        <input type="checkbox" name="lunch" id="lunch" value="lunch">
+        <label for="lunch">lunch</label>
+        <input type="checkbox" name="dinner" id="dinner" value="dinner">
+        <label for="dinner">dinner</label>
+
+        <br><br>    
+
+        <label for="remark">Remark</label>
+        <textarea id="remark" name="remark"></textarea>
+
+        <br><br>
+
+        
+        <button type="send">Send</button> 
+        <button type="reset">Cancel</button>
+    
+        </fieldset>  
+    </form>  
+</body>
+</html>

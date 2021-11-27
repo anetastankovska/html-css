@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h3>Forms</h3>
+    <form action="" method="GET">
+        <fieldset>
+            <legend>Sign up form</legend>
+            <!-- First way of writing label elements -->
+            <label for="firstname">First name: </label>
+            <input type="text" name="firstname" id="username">
+        
+    <br><br><br>
+    
+            <!-- Second way of writing label elements -->
+            <label for="secondname">Second name: </label>
+                <input type="text" name="secondname" id="secondname" placeholder="Enter your second name">
+            </label>
+
+    <br><br><br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+            <br><br><br>
+
+            <label for="pass">Password: </label>
+            <input type="password" name="password" id="pass" minlength="12">     
+        </fieldset>   
+
+        <!-- Form containing file input -->
+        <input type="submit" value="Sign up">
+        <input type="reset" value="Reset form">
+    </form> 
+    
+    <br><br><br>
+
+    <form>
+        <!-- Text area without placeholder -->
+        <label for="gigComments">What did you like about this gig?</label>
+        <textarea id="gigComments" name="gigComments">Enter your comments...</textarea>
+    </form>
+
+    <br><br><br>
+
+    <form>
+        <label for="comments">Tell us about your experience</label>
+        <!-- Text area with placeholder -->
+        <textarea id="comments" name="comments" cols="40" rows="20>" placeholder="Enter your comments"></textarea>
+
+    </form>
+    
+    <!-- Form containing radio buttons -->
+    <form action="" method="GET">
+        <p>Plese select your favorite genre: </p>
+        <input type="radio" name="genre" id="pop" value="pop>" checked>
+        <label for="pop">Pop</label>
+        <input type="radio" name="genre" id="rock" value="rock">
+        <label for="rock">Rock</label>
+        <input type="radio" name="genre" id="jazz" value="jazz">
+        <label for="jazz">Jazz</label>
+    <br><br>
+        <p>Button element with plus sign image</p>
+        <button>
+            <img src="Images/plus_sign.png" width="20">
+        </button>
+    </form>
+
+    <br><br>
+
+    <!-- Hidden input -->
+    <input type="hidden" name="product-code" value="P1234">
+
+    <br><br>
+
+    <!-- Form containing checkboxes -->
+    <form action="" method="GET">
+        <p>Please select your favorite music services</p>
+        <input type="checkbox" name="service" id="itunes" value="itunes">
+        <label for="itunes">Itunes</label>
+        <input type="checkbox" name="service" id="livefm" value="livefm">
+        <label for="livefm">Live FM</label>
+        <input type="checkbox" name="service" id="spotify" value="spotify">
+        <label for="spotify">Spotify</label>
+        <input type="checkbox" name="service" id="youtube" value="youtube">
+        <label for="youtube">Youtube</label>
+    </form> 
+
+    <br><br><br>
+`   
+    <!-- Form containing drop down -->
+    <form action="" method="GET">
+        <label for="devices">Please select what device do you listen to music on</label>
+        <select name="devices" id="devices">
+            <!-- If we want to have a predefined text -->
+            <option value="" disaled selected hidden>Please select device</option>
+
+            <option value="iPhone">iPhone</option>
+            <option value="radio">Radio</option>
+            <option value="computer">Computer</option> 
+        </select>  
+    </form>
+    <br><br><br>
+
+    <!-- Form containing multiple select box -->
+    <form action="" method="GET">
+        <label for="instruments">Please select the instruments you play on</label>
+        <select name="instruments" id="instruments" multiple="multiple" size="3">
+            <option value="guitar">Guitar</option>
+            <option value="bass">Bass</option>
+            <option value="drums">Drums</option>
+            <option value="keyboard">Keyboard</option>
+        </select>
+    </form> 
+
+<br><br><br>
+
+    <!-- Form containing file input -->
+    <form action="" method="GET">
+        <label for=song>Upload your song</label>
+        <input type="file" name="songFile" id="song">
+    </form>
+
+<br><br><br>
+
+    <!-- Form containing file input -->
+
+</body>
+</html>
