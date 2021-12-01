@@ -1,0 +1,66 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+article {
+    color: red !important;
+}
+
+article {
+    color: gold;
+}
+
+.blue-background {
+    color: blue;
+}
+
+#contact-first-paragraph {
+    color: fuchsia;
+}
+
+li > a {
+    font-weight: bold;
+}
+
+li a {
+    font-weight: bold;
+}
+
+.last-aside-home > h4+p {
+    font-style: italic;
+}
+
+.last-aside-home > h4~p {
+    font-size: 10px;
+}
+
+/*targets h5 elements in all articles*/
+article > h5 {
+
+}
+
+h5#article-h5 {
+
+}
+
+/*targets only the h5 element within he article element with the specific id*/
+article > h5#article-h5 {
+
+}
+
+/*some stylings are not inherited by default (i.e background color) if we want the child element to inherit the style from the parent element we have to specify this with inherit*/
+input {
+    color: inherit;
+}
+
+p a {
+
+}
+
+p > a {
+
+}
+
+.last-aside-home-paragraph {
+
+}
