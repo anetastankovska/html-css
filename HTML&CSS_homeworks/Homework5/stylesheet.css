@@ -37,11 +37,20 @@ article>h4 {
     font-size: 1.2em;
 }
 
-nav a {
-    padding:1vw ;
-    text-decoration: none;
-    font-family: "Inria Sans";
+.nav {
+    background-color: rgb(175, 174, 228); 
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline-block;
+    font-size: 18px;
+    padding: 5px;
     color: mediumvioletred;
+    text-decoration: none;
 }
 h1 {
     font-family: "Lobster";
