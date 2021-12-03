@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "Comforter";
+    font-weight: normal;
+    font-style: normal;
+    src: url(Fonts/Comforter/Comforter-Regular.ttf); 
+}
+
+@font-face {
+    font-family: "Cookie";
+    font-weight: normal;
+    font-style: normal;
+    src: url(Fonts/Cookie/Cookie-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Inria Sans";
+    font-weight: normal;
+    font-style: normal;
+    src: url(Fonts/Inria_Sans/InriaSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Lobster";
+    font-weight: normal;
+    font-style: normal;
+    src: url(Fonts/Lobster/Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    font-weight: normal;
+    font-style: normal;
+    src: url(Fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+article>h4 {
+    font-size: 1.2em;
+}
+
+nav a {
+    padding:1vw ;
+    text-decoration: none;
+    font-family: "Inria Sans";
+    color: mediumvioletred;
+}
+h1 {
+    font-family: "Lobster";
+    color: black;
+    text-shadow: 2px 2px 2px gray;
+    text-align: center;
+    text-decoration-line: underline;
+    transition: 0.5s all linear;
+}
+
+h1:hover {
+    color: rgb(128, 0, 85);
+    font-size: 2.5em;    
+}
+
+h2 {
+    font-family: "Comforter";
+    text-align: right;
+    padding-right: 4vw;
+    text-decoration-line: underline;
+}
+
+h3 {
+    text-decoration-line: underline overline;
+}
+
+article {
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#first {
+    font-family: "Cookie";
+    font-size: 2em;
+    background-color: rgb(205, 170, 224);
+}
+
+#second {
+    font-family: "Cookie";
+    font-size: 2em;
+    background-color: rgb(137, 221, 193);
+}
+
+#third {
+    font-family: "Cookie";
+    font-size: 2em;
+    background-color: rgb(138, 163, 231);
+}
+
+.save_money>h4 {
+    color: indigo;
+}
+
+.make_budget>h4 {
+    color: teal;
+}
+
+.reduce_debt>h4 {
+    color: darkslateblue
+}
+
+p {
+    font-family: "Inria Sans";
+    font-size: 1.1em;
+}
+
+ul {
+    font-family: "Playfair Display";
+    font-size: 1.1em;
+}
+
+.save_money {
+    text-align: justify;
+    padding: 1vw;
+    box-shadow: 3px 3px 3px rgb(143, 111, 219);
+    background-image: linear-gradient(rgb(211, 187, 231), rgb(226, 219, 231));
+}
+
+.make_budget {
+    text-align: justify;
+    padding: 1vw;
+    box-shadow:  3px 3px 3px teal;
+    background-image: linear-gradient(rgb(179, 226, 223), rgb(216, 231, 230)) ;
+}
+
+.reduce_debt {
+    text-align: justify;
+    padding: 1vw;
+    box-shadow: 3px 3px 3px rgb(162, 162, 224);
+    background-image: linear-gradient(rgb(152, 173, 230), rgb(185, 197, 230));
+}
+
+iframe {
+    margin-right: 30px;
+}
+
+.savings_image {
+    position: relative;
+}
+
+.future {
+    font-family: "Comforter";
+    font-size: 3.5em;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}

@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "Roboto";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../Fonts/Roboto-Regular.ttf")
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-style: normal;
+    src: url(../Fonts/Roboto-Bold.ttf);
+}
+
+/*Google fonts using import at-rule*/
+
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+
+h1 {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+h2 {
+    font-family: "Comforter", cursive;
+}
+
+.small {
+    font-size: x-small;
+}
+
+.first-paragraph {
+    text-align: left;
+}
+
+.second-paragraph {
+    font-size: 20px;
+    font-style: italic;
+    text-align: right;
+}
+
+.second-paragraph::first-letter {
+    font-size: 40px;
+    font-family: Comforter;
+}
+
+.third-paragraph {
+    font-weight: bold;
+    word-spacing: 5px;
+    text-align: center;
+}
+
+.third-paragraph::first-line {
+    color: red;
+}
+
+.fourth-paragraph {
+    text-align: justify;
+}
+
+.font-weight-bold {
+    font-weight: bolder;
+    font-style: oblique;
+    height: 40px;
+}
+
+h3 {
+    text-transform: uppercase;
+    text-decoration-style: dotted;
+    text-decoration-line: underline overline line-through;
+    text-decoration-color: crimson;
+    text-decoration-thickness: 3px;
+
+
+/* Shorthand */
+text-decoration: red dotted underline overline line-through 3px;
+line-height: 3.5;
+letter-spacing: 3px;
+}
+
+.bird-image-text {
+    vertical-align: top;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+    background-color: lightblue;
+    font-weight: bold;
+}
+
+.bird-image {
+    vertical-align: middle;
+}
