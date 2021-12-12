@@ -1,0 +1,289 @@
+.container {
+    float: left;
+    position: relative;
+    background-color: #e84c3c;
+    height: 200px;
+    width: 400px;
+}
+
+.bar {
+    background-color: white;
+    position: absolute;
+    height: 40px;
+    width: 1px;
+    z-index: 2;
+}
+
+.placeholder {
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 200px;
+    
+}
+
+.text {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 4px;
+}
+
+@keyframes loading {
+    0%{
+        height: 40px;
+        width: 0px;
+    }
+
+    66% {
+        height: 40px;
+        width: 200px;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        height: 40px;
+        width: 200px;
+    }
+}
+
+.container:hover .bar {
+    animation-name: loading;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    animation-fill-mode: forwards;
+}
+
+
+.container1 {
+    float: left;
+    position: relative;
+    background-color: #dd4838;
+    height: 200px;
+    width: 400px;
+}
+
+.bar1 {
+    box-sizing: border-box;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    position: absolute;
+    height: 40px;
+    width: 1px;
+    z-index: 2;
+}
+
+.placeholder1 {
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 200px;
+    
+}
+
+.text1 {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 4px;
+}
+
+@keyframes loading1 {
+    0%{
+        height: 40px;
+        width: 0px;
+    }
+
+    66% {
+        height: 40px;
+        width: 200px;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        height: 40px;
+        width: 200px;
+    }
+}
+
+.container1:hover .bar1 {
+    animation-name: loading1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    animation-fill-mode: forwards;
+}
+
+.container2 {
+    clear: both;
+    float: left;
+    position: relative;
+    background-color: #e84c3c;
+    height: 200px;
+    width: 400px;
+}
+.placeholder2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.circle {
+    float: left;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 10px;
+}
+
+.outer {
+    opacity: 0.6;
+}
+
+@keyframes spin {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(180deg);
+    }
+}
+
+.container2:hover .placeholder2 {
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    animation-fill-mode: forwards;
+}
+
+.container3 {
+    float: left;
+    position: relative;
+    background-color: #dd4838;
+    height: 200px;
+    width: 400px;
+}
+
+.square {
+    background-color: white;
+    position: absolute;
+    height: 40px;
+    width: 1px;
+    z-index: 2;
+}
+
+.placeholder3 {
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 40px;
+    
+}
+
+.circle-placeholder {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60px;
+    width: 60px;
+}
+
+.circle-float {
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+@keyframes square_load {
+    0%{
+        height: 40px;
+        width: 0px;
+    }
+
+    66% {
+        height: 40px;
+        width: 40px;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@keyframes circle-floating {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        top: 0;
+        left: 90%;
+    }
+
+    50% {
+        top: 90%;
+        left: 90%;
+    }
+    75% {
+        top: 90%;
+        left: 0;
+    }
+
+    100% {
+        top: 0px;
+        left: 0;
+    }
+}
+
+.container3:hover .square  {
+    animation-name: square_load;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    animation-fill-mode: forwards;
+}
+
+.container3:hover .circle-float {
+    animation-name: circle-floating;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    animation-fill-mode: forwards;
+}
+
+
